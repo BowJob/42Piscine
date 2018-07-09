@@ -1,0 +1,2127 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww24360\viewh21300\viewkind0
+\deftab720
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f0\b\fs24 \cf0 GIT WILL NOT SUBMIT AND DOWNLOAD EMPTY DIRECTORIES!!!!!!!!!!\
+\
+DAY 1
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+0. Finish Day 00 <- there are time limits for each day.\
+1a. Check in video Piscine C - The Pedagogy\
+1b. C Turn in system <-\
+1c. Check recommended text editors\
+\
+1a. Rules of the school and Piscine\
+part1\
+Rules and guidelines (described in Man42)\
+\
+part2\
+take notes, listen to others, try to bring out new ideas, test\
+\
+part3\
+Avoid repeating mistakes, try to reapply successes based on context and communicate with others.\
+\
+Part 4 peer eval\
+Correction points - maintain balance <- 0 can\'92t get graded, too many (cap?) can\'92t grade.\
+Use different computers between grader and the graded.\
+To grade\
+Main page -> Corrections -> Manage slots\
+To get graded\
+Goto project -> select project -> button normally related to \
+There will be \'93trouble\'94 if missing from slots marked as available to grade\
+\
+Part 5\
+Grading is pass/fail <- there is apparently a \'93defense\'94 part of grading\
+\
+!!!DEFENSE!!! <- Defense is peer eval\
+Final Step of each project <- understanding, balance, feedback, difficulties, strategies, what worked and failed.\
+\
+Defense is an exchange.\
+\
+Does defense only happen after failing/finishing a project????\
+\
+1. Meet the person in person before \'93git clone\'94 of repository can be shared (meeting new people is encouraged)\
+2. Defense lasts a minimum of 15 to 20 minutes. \
+3. If a project has Norm flag, check its criteria first (also against the official norminette). Not following the norm will drop defense and result in a grade of 0.\
+4. Learn from others mistakes and successes (future clients are likely to check if the functions are there)\
+5. Exchange ideas and try to be constructive.\
+6. defense must reach certain points  to receive exp even if succeed.\
+\
+Part 6\
+$>Man 42\
+Common goal -> Professional integration and the ability to solve new problems.\
+4 parts -> learn basics (Lv0), professional experience (Lv7), complex projects with team (lv 10), final internship (lv20 - Lv 21)\
+70 hours a week at the school\
+\
+Come up with solutions rather than learn once specific one that will be updated:\
+1. Gather info, from the net (don\'92t just pick first source) and from peer\
+2. Test, test and test again.\
+3. Technical aspects of the project is important, but also focus on performance, team management, involvement, ways to improve.\
+4. Cheating is turning in things that is not created by me OR I can\'92t rewrite the program by myself and only myself.\
+5. Socialize\
+6. Staff will only help with the necessities\
+\
+1b. Turn in system\
+\
+1. We use Vogsphere, git repository.\
+\
+/tmp/vogsphere>\
+\
+git clone vogsphere@vogsphere.42.fr:<Path provided in project> <Folder name>\
+\
+vogsphere.42.fr:\
+vgs.42.fr:\
+vgs:\
+\
+2. cd to folder\
+\
+3. vim test.c\
+\
+4. git status (should say test.c is there but untracked files are present)\
+\
+5. git add test.c\
+\
+6. git status\
+\
+7. git commit -m \'93Creation of test.c\'94 <- can be any message\
+\
+8. git status (should be nothing to commit)\
+\
+9. vim test.c (make some changes)\
+\
+10. git status (there should be a modified inform of test.c)\
+\
+11. git add test.c\
+\
+12. git commit -m \'93Modification of test.c\'94\
+\
+\'97\'97Everything is on the computer at this time\'97\'97\
+\
+13. git push origin master (just git push for the future, first time needs the ones that follows)\
+\
+14* (was an example) echo \'93test\'94 > test.txt\
+\
+15. check what is turned in\
+git clone again but:\
+\
+git clone vgs: (path) (folder name)verif\
+\
+cd folder-verif\
+\
+cat test.c\
+\
+Quick guide:\
+1. git clone vgs:<path> <foldername>   (has contents from the previous example)\
+\
+2. cd foldername\
+\
+3. do something, such as echo\'94toto\'94 >tata.txt\
+\
+4. git add tata.txt\
+\
+5. git commit -m \'93creation of tata\'94\
+\
+6. git push\
+\
+7. git clone but a new folder to check if everything was pushed correctly.\
+\
+8. cd and cat tata to verify.\
+\
+check out git pull\
+\
+git clone\'92s time is the submittal time.\
+\
+kerberos command and ticket\
+\
+1. command line -> klist\
+\
+2. kdestroy (as a test, deletes klist)\
+\
+3. git clone should fail\
+\
+4. kinit <username> password\
+\
+First time using k commit will need F L name and email\
+\
+check out git at git-scm.com\
+\
+Vogspere hand book\
+\
+1. Always check it as project start to make sure you can turn in. Asking at last few hours will net receive help.\
+\
+2. \
+\
+Git:\
+\
+1. first time setup: \'93git config - - list\'94 to see what is there\
+2. git config - -global user.name       and     user.email\
+\
+1ca. emacs\
+\
+1. command: emacs main.c\
+\
+2. ctrl x and ctrl c to exit\
+\
+3. ctrl x and ctrl s to save\
+\
+4. ctrl z to suspend emacs, fg to go back\
+\
+5. ctrl e and ctrl a to go to beginning and end of a line\
+\
+6. ctrl s to search\
+\
+7. ctrl x then ctrl f to open new file\
+\
+8. ctrl x then 3, ctrl x then 2 to open buffer, ctrl x then o to move around\
+\
+9. ctrl x then 0 to close buffer\
+\
+10. ctrl c then ctrl h to add 42 header.\
+\
+1cb. vim\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.oregonwebradio.net/backup_fedora/tutorials/vim_li/quickstart.html"}}{\fldrslt \cf0 http://www.oregonwebradio.net/backup_fedora/tutorials/vim_li/quickstart.html}}\
+\
+1. vim main.c\
+\
+2. vim has command mode and insertion mode\
+\
+3. :q to quit, :q! if you don\'92t want to save\
+\
+4. press \'93I\'94 to go to insertion mode\
+\
+5. esc to switch back to command mode.\
+\
+6. :w to save, :q to quit\
+\
+7. $ will bring to end of line, ^ will bring to beginning\
+\
+8. :e then name to create new file (example.c)\
+\
+9. :vs to split screen to two\
+\
+10. ctrl w to move between buffers\
+\
+11. :sp to show buffer\
+\
+12. :q to quit a buffer\
+\
+13. :e mail to open it\
+\
+14. insert 42 header :Std header\
+\
+C in 42 min, subset of C\
+\
+Instructions for the CPU and the data to handle are both in RAM\
+\
+C, simple, compiled languages, operation system\'92s environment\
+\
+type name(type 1 param 1, type2 param2, \'85)\
+BLOCK\
+\{\
+	Local variables declaration\
+	instructions;\
+\}\
+\
+int tab[42];\
+\
+struct s_fortytwo\
+\{\
+	int a;\
+	char b[21];\
+\};\
+\
+struct s_fortytwo a;\
+\
+always starts at:\
+int main()\
+\{\
+\
+\}\
+\
+blocks,\
+expressions\
+\
+a\
+b[18]\
+sft_var.a\
+\
+sum(18,a)\
+\
+a = 42\
+b[2+a] = sum (12,30)\
+sft_var.a = 0\
+\
+expressions (comparison)\
+\
+== =! > < <= >= || && !\
+\
+Binary operators >> << | & ^\
+\
+a += 10     a = a + 10\
+b[50] /=2   b[50] = b[50]/2\
+a++    a+=1    a = a+1\
+\
+A = 65 <-\
+sizeof(type_or_var)\
+&a (address of variable a in RAM)\
+\
+exp1 ? exp2 : exp3\
+\
+(test) ? (true here): (false here);\
+\
+\'93hello forty-two\'94 is a char array that ends in \'930\'94\
+\
+pointers\
+\
+int *p;\
+p=&a;\
+*p=1;   \'97>  a=1;\
+\
+int tab[42]      p=&(tab[0]);\
+\
+tab[x]   <\'97>  *(p+x)\
+\
+Control structures\
+\
+if (something)\
+	instruction\
+\
+if (something)\
+	instruction\
+else\
+	instruction\
+\
+while (something)\
+	instruction\
+\
+return (something)\
+return;\
+\
+\
+NORM\
+\
+Denominations, they must always start with\'85.\
+\
+Structure s_\
+\
+Typedef t_\
+\
+Union u_\
+\
+Enum e_\
+\
+global g_\
+\
+variable and functions names can only contain lowercases, digits and _\
+\
+Files and directories (folders) can only contain lowercase, digits and _\
+\
+file must compile\
+\
+NO characters from non standard ascii\
+\
+Use explicit or easy to remember names, only \'93counters\'94 can be named to be whatever\
+\
+Abbreviations are tolerated but still need to be intelligible, if contains more than one word, separate by _\
+\
+all identifiers must be in English\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b \cf0 use of global variable must be justifiable.
+\b0 \
+\
+Formatting:\
+\
+1. all files must start with school header\
+2. must use tabs instead of 4 spaces to start a code, tabs should be 4 spaces long\
+3. function can not exceed 25 lines, not counting the function\'92s brackets\
+4. one instruction per line\
+5. empty line must be empty, no space or tabs\
+6. line can never end with space or tabs\
+7. must new line after each curly bracket or end of control structure\
+8. unless end of line, each comma or semi colon must be followed by a space\
+9. each operator (binary or ternary) or operand must be separated by 1 and only one space\
+10. C keyword as well as size of must be followed by a space\
+11. variable declaration must be indented on the same column\
+12. * that go with winters must be stuck to variable names\
+13. one variable declaration per line\
+14. no declaration and initialization on the same line, except for global variables and static variables\
+15. declarations must be at the beginning of a function and must be separated by an empty line\
+16. no empty line between declarations or implementations\
+17. multiple assignments are forbidden.\
+18. Can add a new line after an instruction or control structure but will have to add an indentation with brackets or affectation operator. operators must be at the beginning of a line\
+\
+Function Parameters\
+\
+1. functions can take only 4 named parameters max\
+2. function that doesn\'92t take arguments must be started with the word \'93void\'94 as argument\
+\
+Functions\
+\
+1. parameters in functions prototypes must be named.\
+2. each function must be separated from the next by an empty line\
+3. functions\'92 identifier must be aligned within a same file, same goes for header files.\
+\
+Typedef, struct, enum and union\
+\
+1. tab when declaring struct, enum or union\
+2. when declaring a variable of type struct, enum, union, add a single space.\
+3. add tab between two parameters of a typedef\
+4. when declaring a struct, union or enum with a typedef, align the typedef\'92s name with the struct/union/enum\
+5. cannot declare a structure in .c file ( put it in .h (header file) instead)\
+\
+Headers\
+1. Things allowed in headers are: header inclusions (sys or not), declarations, defines, prototypes, and macros.\
+2. all includes (.c or .h) must be at the beginning of the file\
+3. Protect headers from double inclusions, if file is ft_foo.h, bystander macro is FT_FOO_H\
+4. functions prototypes must exclusively be in .h files.\
+5. unused .h are forbidden.\
+6. header inclusions must be justified in a .c file as well as in a .h file\
+\
+Macros and Preprocessors\
+1. defines that explain or describe code are forbidden\
+2. multiple macros are forbidden\
+3. only macros names are uppercase\
+4. must indent following #if, #ifdef or #ifndef\
+\
+Forbidden\
+\
+1. NO: for, do..while, switch, case, goto\
+2. NO Interlinked ternary operators such as \'93?\'94.\
+3. NO Very Large Arrays\
+\
+Comments\
+\
+1. Comment in your source files\
+2. Comments cannot be inside function\'92s bodies\
+3. Comments start and end by a single line, all intermediary lines must align and start by **.   /*     */\
+4. Comments must be in english and must be useful\
+5. Comment can not justify a function with no purpose (bastard function)\
+\
+Files\
+\
+1. Cannot include a .c file\
+2. cannot have more than 5 function definitions in a .c file\
+\
+Makefile\
+\
+1. $(NAME), clean, clean, re and all rules are mandatory\
+2. if make file relinks, the project is considered to be non functional\
+3. multi binary project, must have a rule that compiles both binaries as well as specific rule for each binary compiled.\
+4. Project that calls a functions libft, make file must compile this library automatically.\
+5. wild card usage is forbidden (no *.c).\
+\
+Basic commands\
+1. exit to leave\
+2. pwd shows path\
+3. ls shows directory contents\
+4. man shows manuals\
+5. ls -l shows details, ls -la shows hidden as well\
+6. mkdir makes directory\
+7. rm deletes files\
+8. rm -Rf deletes everything\
+9. cd / goes to root\
+10. home file follows you at the school\
+\
+Touch, Cat\
+1. Touch create file\
+2. cat, preview \
+3. cp copy\
+4. mv move\
+5. rm remove\
+6. chmod change permissions\
+\
+cd (file name) .. move to directory above\
+\
+7. mv to move\
+8. date for time\
+9. chmod changes mods and permissions\
+chmod ### <file name>\
+# goes from 0 (no access) to 7 (all access)\
+\
+
+\b address includes vgs already\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b0 \cf0 \
+tar -cf testDay00.tar testDay00\
+\
+ln to create links ln -s to create symbolic links\
+\
+command > file name to pipe out put to file\
+\
+*ldapwhoami* is the correct answer\
+ldapsearch -LLL uid=cshi 1 <- 1 can be any number and it will work\
+ldapmodify -h ldap-master.42.us.org -f mobile-phone.ldif\
+sort f sort r\
+ldapsearch -LLL -S 'cn' 'uid=c*' cn|grep "^cn:"|sort -f -r\
+ls -t -F|grep ""|paste -s -d, -\
+rm rf\
+find . -type f -name '*.[~|#]' -print\
+find . -type f \\( -name "#*" -o -name "*.[~#]" \\) -delete\
+create a magic file named ft_magic\
+/usr/share/file/magic.mgc\
+IBM\'92s magic file\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.ibm.com/support/knowledgecenter/SSLTBW_1.13.0/com.ibm.zos.r13.bpxa500/mgc.htm"}}{\fldrslt \cf0 https://www.ibm.com/support/knowledgecenter/SSLTBW_1.13.0/com.ibm.zos.r13.bpxa500/mgc.htm}}\
+\
+Day 1 Homework\
+\
+ex01\
+chmod\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+0 000\
+1 001\
+2 010\
+3 011\
+4 100\
+5 101\
+6 110\
+7 111\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+mkfile <file size>\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 tar -cf <filename>.tar <filename>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+ex02\
+\
+ln to create hard links\
+ln -s to create symbolic links\
+\
+ex03\
+\
+ex07\
+\
+ls -mpU   <\'97 m displays commas, p adds / to directories and U lists entries in directory order.\
+\
+ls -a -t -F|grep ""|paste -s -d, -\
+	ls -a -t -F  <\'97 a selects all, t sorts it by modification time, -F classifies the files by adding something to the end\
+	grep \'93\'94 <\'97 grep searches and displays with newline.\
+	paste -s -d, <\'97 -s serial( one file at a time) -d list instead of tabs\
+\
+ex10\
+find . -type f \\( -name "#*" -o -name "*[~#]" \\) -delete\
+\
+tar -xvf to un tar\
+\
+Tar-ing a file will maintain its permissions, it seems.\
+\
+Day 1 corrections\
+\
+1. remove non wanted files\
+2. try to change dates\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b\fs26 \cf0 Day 2 (Day 01 in piscine)
+\b0\fs24 \
+\
+1. Echo, cat, more\
+\
+Echo writes to std out\
+\
+Cat displays contents\
+\
+Cat -e displays none display symbols\
+\
+more (file name)\
+\
+less (file name)\
+\
+2. Head, Tail, grep\
+\
+head shows first lines of a file\
+\
+tail shows last lines\
+\
+can specify how many lines\
+\
+tail -n 3 <file name>\
+\
+grep specifies which lines to show\
+\
+grep \'93criteria\'94 <file name>\
+\
+grep -v inverts searches\
+\
+grep -i case insensitive matching\
+\
+3. redirections\
+\
+cat file.txt\
+\
+echo \'93bonjour\'94\
+\
+echo \'93bonjour\'94 > output\
+\
+^repeated erases and replace\
+\
+>> will add to the file\
+\
+cat < file.txt reads from file\
+\
+changes process, keeps reading from standard input\
+\
+cat file.txt| grep \'94math\'94\
+\
+cat file.txt | grep \'94math\'94 | head -n 1\
+\
+4. sort, cut\
+\
+cat file.txt | sort | cut -d , -f 1\
+\
+cat file.txt | sort | cut -d , -f 1 | cat -e\
+\
+cut is very powerful\
+\
+cat file.txt | sort | cut -d , -f 1 | sed \'93s/thomas/Thomas\'94\
+\
+cat file.txt | sort | cut -d , -f 1 | tr \'93tilda e\'94 \'93normal e\'94\
+\
+cat file.txt | sort | cut -d , -f 1 | tr \'93tilda ex\'94 \'93normal eX\'94 <- replaces e tilda with e and x with X\
+\
+5. wc, ifconfig, bc, find, env, export\
+a\
+wc <file name>    lines, word count, characters\
+\
+cat file.txt | grep thomas | wc -l\
+\
+file file.txt\
+\
+ifconfig <- shows network info\
+\
+bc calculator\
+\
+echo \'931+2\'94 | bc\
+\
+find . <- shows all file\
+\
+find /usr <- shows all including sub\
+\
+find /usr -name \'93ls*\'94\
+\
+env\
+\
+export line=3\
+cd \
+$line will call it\
+\
+unset will remove the entry in env\
+\
+6. stdout and stderr\
+\
+errors are displayed on the stderr channel\
+\
+cat adfasdf 2>&1 | rev    will reverse the error message on stdout\
+\
+cat legit.txt legit2.txt ad;fjadfkljaf 2> error      channel 2\'92s error will go to the error file\
+\
+echo \'93bonjour\'94 > /dev/null    removed and forgotten\
+\
+cat legit.txt legit2.txt ad;fjadfkljaf > /dev/null/  will channel the legit messages to nothingness and let you keep the error messages\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b \cf0 Need help understanding the flags for sed:\
+sed "s/^[ \\t]*//"
+\b0 \
+\
+ex01\
+\
+the group file\
+/etc/group\
+groups <user name> shows which group a member is in\
+\
+groups $FT_USER| tr ' ', ','\
+\
+ex02\
+\
+find . -type f -name '*.sh' -print\
+\
+basename <file name> .sh  will\
+\
+find . -type f -exec basename \{\} \\;| sed 's/...$//'\
+\
+ex04\
+\
+eno is the ethernet\
+\
+ifconfig -a |grep 'ether'|awk 'length($0) < 26\'92|grep -o '..................$'\
+\
+ex06\
+\
+ls | sed n\\;g\
+\
+ls | sed g\\;n\
+\
+ls -l|awk 'FNR > 0' |sed g\\;n\
+\
+ex07\
+\
+cat /etc/passwd\
+\
+cat /etc/passwd | awk 'FNR > 10' |grep -oE '^[^:]+'  <- prints all logins\
+\
+cat /etc/passwd | awk 'FNR > 10' |grep -oE '^[^:]+' |awk 'NR >= 8 && NR <= 16'\
+\
+cat /etc/passwd | awk 'FNR > 10' |grep -oE '^[^:]+' |awk "NR >= $FT_LINE1 && NR <= $FT_LINE2"  <- \'93 \'94 to take in global variables\
+\
+cat /etc/passwd | awk 'FNR > 10' |grep -oE '^[^:]+' |awk "NR >= $FT_LINE1 && NR <= $FT_LINE2"| rev | tr '\\n' ", " <\'97 reverse and replace newlines with commas\
+\
+cat /etc/passwd | awk 'FNR > 10' |grep -oE '^[^:]+' |awk "NR >= $FT_LINE1 && NR <= $FT_LINE2"| rev | tr '\\n' ", "|sed 's/$/\\./'  <\'97 sed replaces last new line with a period.\
+\
+
+\b Day 3 (day 02 in Piscine)
+\b0 \
+\
+First step in C\
+\
+1. insert school header\
+\
+Vim: ctrl c ctrl h\
+emacs: function f1\
+\
+2. build main\
+\
+int main()\
+\{\
+	return (0);\
+\}\
+\
+3, compiler\
+\
+gcc -o <- tell it the type of output\
+\
+gcc -o jour02 jour02.c\
+\
+4. ./ runs in current directory\
+\
+5. compiler has the declaration and knows what arguments are required\
+\
+#include <unistd.h>\
+\
+int main()\
+\{\
+	write (1, \'93@\'93, 1) ;   <\'97 first 1 means which stream to output to, @ is the string to be written, 1 at the end means how many characters\
+	return (0);\
+\}\
+\
+6. recompile\
+\
+7. ./ to run the program\
+\
+8. add newline to get rid of % at end\
+\
+#include <unistd.h>\
+\
+int main()\
+\{\
+	write (1, \'93@\\n\'93, 2) ;   <\'97 first 1 means which stream to output to, @ is the string to be written, 1 at the end means how many characters\
+	return (0);\
+\}\
+\
+9. \
+\
+#include <unistd.h>\
+\
+int ft_putchar(char c)\
+\{\
+	write (1, &c, 1) ; \
+	return (0);\
+\}\
+\
+int main()\
+\{\
+	ft_putchar(\'91@\'91);\
+	t_putchar(\'91\\n\'91);\
+	return (0);\
+\}\
+\
+10. \
+\
+9. \
+\
+#include <unistd.h>\
+\
+int ft_putchar(char c)\
+\{\
+	write (1, &c, 1) ; \
+	return (0);\
+\}\
+\
+int ft_nputchar(char c, int n)\
+\{\
+	int i;\
+	int i = 0;\
+	while ( i < n)\
+		\{\
+			ft_putchar(c);\
+			i++;\
+		\}\
+	return (0);\
+\}\
+\
+int main()\
+\{\
+	ft_nputchar(\'91@\'91, 42);\
+	t_putchar(\'91\\n\'91);\
+	return (0);\
+\}\
+\
+ex02\
+\
+ft_putchar(i + '0'); <- changes int i into char.\
+\
+ex04\
+\
+#include <unistd.h>\
+/* Prototype of ft_print_numbers */\
+void ft_print_comb(void);\
+int ft_putchar(char c)\
+\{\
+	write (1, &c, 1) ;\
+	return (0);\
+\}\
+int main()\
+\{\
+	ft_print_comb();\
+	return (0);\
+\}\
+void ft_print_comb(void)\{\
+	int a=0;\
+	int b=0;\
+	int c=0;\
+	int checka=0;\
+	int checkb=0;\
+	int checkc=0;\
+	int i=0;\
+	int checki=0;\
+	int found=0;\
+	while (i<999)\{\
+		if (a==9)\{\
+			a=0;\
+			if (b==9)\{\
+				b=0;\
+				c++;\
+			\}else\{\
+				b++;\
+			\}\
+		\}else\{\
+			a++;\
+		\}\
+		i++;\
+		if (a!=b && b!=c && a!=c)\{\
+			while (checki<=i && found==0)\{\
+				if (checka==9)\{\
+					checka=0;\
+					if (checkb==9)\{\
+						checkb=0;\
+						checkc++;\
+					\}else\{\
+						checkb++;\
+					\}\
+				\}else\{\
+					checka++;\
+				\}\
+				checki++;\
+				if(a==checka && b==checkc && c==checkb)\{found++;\}\
+				if(a==checkb && b==checka && c==checkc)\{found++;\}\
+				if(b==checkb && b==checkc && c==checka)\{found++;\}\
+				if(a==checkc && b==checka && c==checkb)\{found++;\}\
+				if(a==checkc && b==checkb && c==checka)\{found++;\}\
+			\}\
+			if(found==0)\{\
+				ft_putchar(c+'0');\
+				ft_putchar(b+'0');\
+				ft_putchar(a+'0');\
+				ft_putchar(',');\
+				ft_putchar(' ');\
+				found++;\
+			\}\
+			found=0;\
+			checki=0;\
+			checka=0;\
+			checkb=0;\
+			checkc=0;\
+		\}\
+	\}\
+\}\
+\
+
+\b Day4 (day 03 of Piscine)
+\b0 \
+\
+1. Pointers\
+\
+Memory is important for Pointers\
+\
+Movies reserve memory somewhere.\
+\
+High memory and Low memory\
+\
+High memory = stack.\
+\
+Low memory = heap (allocate memory).\
+\
+2. Assignment\
+\
+Declare and assign a memory:\
+\
+int a;\
+int *ptr;\
+\
+pointer contains an address\
+\
+a = 3;\
+ptr =&a;\
+\
+Address does not change as you change values within it.\
+\
+types must match for pointer to point\
+\
+3. dereferenciation\
+\
+*ptr should return the value stored at the address\
+\
+it is possible to create a pointer\'92s pointer, **ptr2\
+\
+int main(void)\{\
+	int a;\
+	int *ptr;\
+	int **ptr2;\
+\
+	a = 3;\
+	ptr = &a;\
+	ptr2 = &ptr;\
+	ft_putnbr(**ptr2);\
+	**ptr2 = 42;\
+	ft+putchar(\'91\\n\'92);\
+	ft_putnbr(a);\
+	return (0);\
+\}\
+\
+\
+a = 3;\
+ptr = &a;  <\'97 ptr points to the address of a\
+ptr2 = &ptr; <\'97 ptr2 points to the address of ptr\
+ptr3 = &ptr2; <\'97 ptr3 points to the address of ptr2\
+print ***ptr3\
+return (0);\
+\
+4. pointer arithmetic\
+\
+&b <\'97 address of b\
+\
+ptr = &b;\
+\
+if a is 4 bytes away from b, then\
+\
+ptr + 1  (size of integer is 4 bytes, so 1 =4)\
+\
+CHAR IS DIFFERENT\
+\
+char is 1 byte each\
+\
+5. arrays\
+\
+int tab[10]; create an array of 10 for int\
+\
+tab [0] = 42; is the same as *(tab + 0) = 42;\
+\
+*(tab + 3) = 42 is the same as tab[3]\
+\
+\
+\
+\
+int tab[10];\
+int tab2[10];\
+int *tabptr[2];\
+\
+tabptr[0] = tab;\
+tabptr[1] = tab2;\
+\
+tabptr[1][3] = 42;\
+tab2[3]\
+\
+\
+\
+tabptr[1][3] = 42;   <\'97\'97\'97> *(tabptr[1] +3) =42;  <\'97\'97\'97> *(*(tabptr + 1) +3) =42;\
+\
+6. character string\
+\
+\'91 \'91 is for char, \'93 \'93 is for strings\
+\
+\'93toto\'94 is not 4 elements, but 5, because there is a /0 in the end\
+\
+can not write to *ptr  <\'97 so no ptr[0] = some number.\
+\
+To write, you need:\
+\
+char ptr[] = \'93toto\'94;  then ptr[0] = \'91p\'92;\
+\
+it is allowed to do this as long as the type is the same:\
+\
+char *ptr;\
+char *ptr2;\
+\
+ptr2 = \'93lol\'94;\
+ptr = \'93toto\'94;\
+\
+ptr = ptr2;\
+\
+7. pointer usage\
+\
+main\
+\{ int a\
+	a = 42\
+	call function\
+\}\
+\
+function(int a)\
+\{ a = 12; \}\
+\
+Print will print 42 because function\'92s a is manipulated as it is a copy instead of the real dea.\
+\
+In order to manipulate main\'92s a,\
+\
+a = 42,\
+function(&a)  <- address of a\
+\
+void function(int *a) \{*a = 12;\}\
+\
+8. Void\
+\
+void *superptr;\
+\
+void pointer can point at ANYTHING\
+\
+can not point to void so no *superpointer[1] = 12\
+\
+so super pointers are mainly used for 
+\b transporting addresses
+\b0 .\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b\fs144 \cf0 *ptr = *(&x) = x\
+* <\'97 value stored at the address\
+&<\'97 address of variable
+\b0\fs24 \
+
+\b\fs96 x[n] = *(x + n)
+\b0\fs24 \
+\
+\
+\
+Day 3 homework\
+\
+void ft_putchar(char ptr);\
+\
+#include <unistd.h>\
+\
+int ft_putchar(char c)\
+\{\
+    write (1, &c, 1) ;\
+    return (0);\
+\}\
+\
+Day 5, Day04 picine\
+\
+1.Introduction to recursion\
+\
+2. Theory\
+\
+How we are currently programming is called "Interative programming", it uses instruction loops that repeat themselves that evaluates to nothing and uses side effects in order to return value (they use variables)\
+\
+Strlen for example, takes a variable, ini it to 0, and increase variable by 1 each iteration (using an external variable to return a result).\
+\
+The result doesn't really return a result, it returns a stored variable.\
+\
+Resursion is more like Russian dolls, one inside another. then use some mechanism to return the result.\
+\
+Understanding of Pile and stack is IMPORTANT <- program reserved region of memory which fills up as we call functions but is mostly empty in the beginning.\
+\
+start -> stack is empty -> main is called (added to stack) -> main call function putstr() (added to stack) -> function put char() (added to stack) -> write is called and (added dto stack) etc etc.\
+\
+every time we call a function, it gets pused onto the stack and it will evaluate itself.\
+\
+Once we are done with the function at the very top, we can remove the function (pop), function will be gone and be replaced by the previous one until back to main.\
+\
+recursive function is a function that calls itself.\
+\
+A stopping condition is needed to stop the recursion from going into infinity.\
+\
+Recursion functions can be represented as a factorial function:\
+\
+5! = 5*4*3*2*1\
+4! = 4*3*2*1\
+5! = 5*4!\
+\
+n! = n*(n-1)*(n-2)*... *3*2*1\
+\
+n! = n*(n-1)!\
+\
+(n-1)!=(n-1)*(n-2)!\
+\
+\
+function fact(n) = n*fact(n-1)\
+fact(1) = 1\
+\
+3. Practice with examples\
+\
+BAD EXAMPLES\
+1infinite, no exit)\
+\
+int fn()\{\
+	fn();\
+	return (0);\
+\}\
+\
+int main ()\{\
+	fn();\
+	return (0);\
+\}\
+\
+\
+1correciton)\
+\
+int fn(int i)\{\
+	if (i <= 5)\{\
+		i++;\
+		fn(i);\
+		return(0);\
+	\}else\{\
+		return(0);\
+	\}\
+\}\
+\
+int main ()\{\
+	fn();\
+	return (0);\
+\}\
+\
+int fn()\{\
+	int i;\
+	i=0;\
+	if (i <= 5)\{\
+		i++;\
+		fn();\
+	\}else\{\
+		return (0);\
+	\}\
+\}\
+\
+int main ()\{\
+	fn(0);\
+	return (0);\
+\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b \cf0 Day 6, day 5 piscine
+\b0 \
+\
+1. Character string manipulation\
+\
+character string is an array of chars\
+\
+ft_putchar(char c)\
+\{\
+	write (1, &c, 1);\
+\}\
+\
+void ft_putstr(char *str)\
+\{\
+	int index;\
+\
+	while(str[index] != \'91\\0\'92)\
+	\{\
+		ft_putchar(str[index]);\
+		index++;\
+	\}\
+\}\
+\
+void replace_first_h_with_y(char *str)\
+\{\
+	str[0] = \'91y\'92;\
+\}\
+\
+void replace_first_char(char *src, char *dest)\
+\{\
+	dest[0] = src[0];\
+\}\
+\
+\
+\
+int main (void)\{\
+	char str1[] = \'93Hello\'94;\
+	char str2[] = \'93Yello\'94;\
+\
+	replace_first_char(str1 , str2)\
+	ft_putstr(str1);\
+	ft_putchar(\'91\\n\'92);\
+\
+	return (0);\
+\}\
+\
+strings ends in \\0\
+\
+\
+HW\
+\
+ex02\
+\
+654 / 100 = 6.54\
+\
+i * 10 > number? not * 10 again\
+\
+if i > number, i / 10 to get into range\
+\
+to iterate, number - (number/i (powered) * i) <-to zero it\
+\
+
+\b Day 7, day 6 piscine
+\b0 \
+\
+Libraries\
+\
+two functions in directory\
+\
+gcc - c   <- allows the compile without main\
+\
+create .o files\
+\
+create with ar and rc as arguments\
+\
+ar rc libstr.a *.o *.o and so on\
+\
+gcc main.c -L. -lstr\
+\
+^makes it compile with the libraries in the same directory\
+\
+ranlib libstr.a\
+\
+main arguments:\
+\
+gcc main.c -L. -lstr\
+\
+int main (int argc, char **argv)\
+ft_putstr(\'93bonjour \'93);\
+ft_putstr(argv[0]);\
+ft_putchar(\'91\\n\'92);\
+\
+argv[0] <- first element of the string, usually the binary\'92s name, will also contain path if ran from a different location\
+\
+argh[1] <- input\
+\
+int main (int argc, char **argv)\
+\{\
+	ft_putstr(\'93bonjour \'93);\
+	if (argc == 2)\
+	\{\
+		ft_putstr(argv[1]);\
+	\}\
+	ft_putchar(\'91\\n\'92);\
+\}\
+\
+^^^ avoid segfaults\
+\
+int main (int argc, char **argv)\
+\{\
+	ft_putstr(\'93bonjour \'93);\
+	if (argc == 2)\
+	\{\
+		ft_putstr(argv[1]);\
+	\}\
+	else\
+	\{\
+		ft_putstr(\'93usage: ./a.out toto\\n\'94);\
+		return (0);\
+	\}\
+\
+\
+\
+	ft_putchar(\'91\\n\'92);\
+\}\
+\
+
+\b Day 8, day 7 piscine
+\b0 \
+\
+Compilation\'92s steps\
+\
+can compile using .c and gcc directly\
+\
+or compile .c into .o files then using linkage\
+\
+can save time, if doing in linkage, can delete and update .o file and just relink the updated file\
+\
+Dynamic memory allocation\
+\
+#include <stdlib.h>\
+#define LEN	42\
+\
+int	main()\
+\{\
+	char *str;\
+	\
+	str = (char*)malloc(sizeof(*str) * LEN + 1);\
+	i = 0;\
+	while (i < LEN)\
+	\{\
+		str[i] = \'910\'92 + (i % 10);\
+		i++;\
+	\}\
+	str[i] = \'91\\0\'92;\
+	ft_putstr(str);\
+	ft_putstr(\'93\\n\'94);\
+	return (0);\
+\}\
+\
+\
+#include <stdlib.h>\
+#define LEN	42000000\
+\
+int	main()\
+\{\
+	char *str;\
+	\
+	str = (char*)malloc(sizeof(*str) * LEN + 1);\
+	i = 0;\
+	while (i < LEN)\
+	\{\
+		str[i] = \'910\'92 + (i % 10);\
+		i++;\
+	\}\
+	str[i] = \'91\\0\'92;\
+	free(str);\
+	while (1)\
+		;\
+	return (0);\
+\}\
+\
+HW\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b\fs28 \cf0 Day 9, day 8 in piscine
+\b0\fs24 \
+\
+Preprocessing\
+\
+1. #include\
+\
+write exists in unistd.h, so we don't have to proto type it.\
+\
+cpp, allows you to see what happens before compilation.\
+\
+#include of any file, can include it directly, before compiling.\
+\
+2. file.h\
+\
+separate files can have problems if their format does not match (one takes int while the one that calls it in another file gives it char or even void).\
+\
+To prevent it, use includes.\
+\
+.h files only holds prototypes.\
+\
+3. #define\
+\
+use define to make macros\
+\
+#define TOTO int\
+\
+word per word\
+\
+#define TOTO(x) int x;   <- replaces TOTO(a) to int a;\
+\
+to link strings\
+#define TOTO(x) #x\
+\
+char *str;\
+str = TOTO(a); <- str = "a";\
+\
+4. #ifdef /#ifndef\
+\
+"if toto is defined, toto will be replaced with texts between # and #\
+\
+#ifdef TOTO\
+\
+int main(void)\
+\{\
+	return (0);\
+\}\
+\
+#endif\
+\
+#ifndef <- if not defined.\
+\
+\
+\
+#ifdef TOTO\
+# ifndef TITI\
+int main(void)\
+\{\
+	return (0);\
+\}\
+# endif\
+#endif\
+\
+\
+------------------------------\
+\
+#define TOTO\
+\
+\
+#ifdef TOTO\
+# ifndef TITI\
+int main(void)\
+\{\
+	return (0);\
+\}\
+# endif\
+#endif\
+\
+shows nothing, because toto is defined.\
+\
+5. Multiple inclusions\
+\
+how to protect your files.h from multiple inclusions\
+\
+#ifndef __FT_TEST1_H__\
+# define __FT_TEST1_H__\
+#include \'93test2.h\'94\
+\
+#endif\
+\
+^own name in caps to test against multiple inclusions\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b\fs36 \cf0 NORM likes it without the leading and ending double \'93__\'94
+\b0\fs24 \
+\
+6. Typedef\
+\
+almost the same as define except the order is switched\
+\
+#define INTP int*;\
+typedef int* int_p;\
+\
+type def will change every declaration into pointers where as define replaces the words so only the first instance is a pointer.\
+\
+7. struct\
+\
+allows you to create groups of data\
+\
+int main(void)\
+\{\
+	int x[10];\
+	int y[10];\
+\
+	return (0);\
+\}\
+\
+so instead we declare a struct to save time\
+\
+struct s_point\
+\{\
+	int x;\
+	int y;\
+\
+\};\
+\
+int main(void)\
+\{\
+	struct s_point a;\
+	struct s_point b;\
+\
+	a.x = 10;\
+	a.y = 42;\
+	b = a; <- sets x and y in b to equal a. saves lots of time!!! and space.\
+	\
+\
+	return (0);\
+\}\
+\
+to make it into a typedef\
+\
+\
+typedef struct s_point\
+\{\
+	int x;\
+	int y;\
+\
+\}			t_point;\
+\
+\
+just call t_point in the main -> t_point a;\
+\
+t_point *ptr;\
+\
+ptr = &a;\
+(*ptr).x = 10;\
+\
+another way is\
+\
+ptr->x = 10;\
+\
+8. enum\
+\
+enum	e_list;\
+\{\
+	val1,\
+	val2,\
+	val3\
+\};\
+\
+int main(void)\
+\{\
+	enum e_list a;\
+\
+	a = val1;\
+	return (0);\
+\}\
+\
+echo $? <- last executable\'92s return value\
+\
+8. Union\
+\
+\
+struct  s_test\
+\{\
+	int i;\
+	char c;\
+	float f;\
+	char tab[4];\
+\};\
+\
+union	u_test\
+\{\
+	int i;\
+	char c;\
+	float f;\
+	char tab[4];\
+\};\
+\
+int main(void)\
+\{\
+	ft_putnbr(sizeof(struct s_test)); <- returns 16 <- there is padding to make it multiples of 4. beware of order.\
+	ft_putnbr(sizeof(union u_test)); <- shows size of 4, shows the size of the biggest one\
+	return (0);\
+\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b\fs28 \cf0 union allows us to access a memory area!!!!!!!!
+\b0\fs24 \
+\
+HW\
+\
+d08\
+\
+Day 10, day 9 piscine\
+\
+gcc is a powerful compiler, and can take complex inputs.\
+\
+1. Makefile\
+\
+make file always have cap M.\
+\
+rule_a:\
+	echo \'93rule A\'94\
+\
+\
+rule_b: rule_a\
+\
+2. Makefile, variables\
+\
+TEXT = \'9342 is for the braves\'94\
+\
+rule_a:\
+	echo $(TEXT)\
+\
+3. Makefile example\
+\
+****Example has error in it per video, please do research****\
+\
+name = awesomeprog\
+\
+SRC = source.c\
+\
+all: $(NAME)\
+\
+$(NAME):\
+	gcc -o $(NAME) $(SRC)\
+\
+clean:\
+	/bin/rm/ -f *.o\
+\
+fclean: clean\
+	/bin/rm -f $(NAME)\
+\
+re: fclean all\
+\
+************************\
+\
+\
+4. pointers to function\
+\
+int	x;\
+int 	*y;\
+\
+x = 42;\
+y = &x;\
+\
+*y = 0;\
+\
+************\
+example base form\
+************\
+-put_stdout -> ecrit sur la sortie standard\
+-put_file      -> ecrit dans un fichier\
+-put_file      -> ecrit sur le r\'e9seau\
+\
+function put (where, what)\
+\{\
+	if (where == STDOUT )\
+		put_stdout (what);\
+	else if (where == FILE)\
+		put_file (what);\
+	else if (where == NETWORK)\
+		put_network(what);\
+	else\
+		error();\
+\}\
+\
+*******************\
+\
+-put_stdout -> ecrit sur la sortie standard\
+-put_file      -> ecrit dans un fichier\
+-put_file      -> ecrit sur le r\'e9seau\
+\
+fun_tab = [	(STDOUT, &put_stdout);\
+		(FILE, &put_file);\
+		(NETWORK, &put_network); ]\
+\
+function put (where, what)\
+\{\
+	for (where_r, put_function) in fun_tab\
+	\{\
+		if (where == where_r)\
+			put_function(what);\
+		\}\
+\}\
+\
+
+\b\fs28 day 11, day 10 piscine.
+\b0\fs24 \
+\
+1. Chained lists, intro\
+\
+Chained list has advantage over malloc as the items do not need to be next to one another.\
+\
+2. examples\
+\
+ifndef		__list_h__\
+#define	__list_h__\
+\
+typedef struct s_list t_list;\
+\
+struct slist \{\
+	char *str;\
+	t_list *next;  <- was struct s_list but type def was able to shorten it.\
+\}\
+\
+t_list *add_link(t_list *list, char *str);\
+void	print_list(t_list *list);\
+\
+\
+#endif\
+\
+\
+**********\
+function\
+**********\
+#include <stdlib.h>\
+#include \'93list.h\'94\
+\
+int main(void)\
+\{\
+\
+	t_list *list;\
+\
+	list = NULL;\
+\
+	list = add_link(list, \'93toto\\n\'94);\
+	list = add_link(list, \'93tata\\n\'94);\
+	list = add_link(list, \'93tutu\\n\'94);\
+\
+	print_list(list);\
+\
+return (0);\
+\}\
+\
+************\
+add link function\
+************\
+#include <stdlib.h>\
+#include \'93list.h\'94\
+\
+\
+t_list *add_link(t_list *list, char *str)\
+\{\
+	t_list *tmp;\
+	tmp = malloc(sizeof(t_list));\
+	if (tmp)\
+	\{\
+		tmp->str = str;\
+		tmp->next = list;\
+	\}\
+	return tmp;\
+\}\
+\
+**********\
+printlist.c\
+**********\
+\
+#include \'93list.h\'94\
+\
+void print_list (t_list *list)\
+\{\
+	while()\
+	\{\
+		ft_putstr(list-> str);\
+		list = list->next;\
+	\}\
+\}\
+\
+\
+*************\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b \cf0 add link adds to the front!!
+\b0 !\
+\
+3. Chained list\
+\
+int add_link(t_list **list, char *str)\
+\{\
+	*list = malloc();\
+\}\
+\
+int i;\
+i = 10;\
+int *p = &i;\
+\
+int **pp;\
+pp = &p;\
+\
+\
+D12, d11 piscine\
+\
+1. Files\
+\
+Manipulate files in C, open, close, read, write.\
+\
+File descriptors:\
+\
+FD 0: stdin\
+FD 1: stdout\
+FD 2: stderror\
+\
+2. File Open\
+\
+int open(char *path, int flags[, mode_t perm]);\
+\
+returns -1 if error\
+\
+a. path can be relative or absolute\
+\
+b. opening mode can be read only, write only or both. and permissions, in case of new file creationg.\
+\
+Will return an int based on file descriptor or -1 in case of error.\
+\
+Flags:\
+\
+3 flags to control level of access to the file:\
+\
+O_RDONLY -> open read only\
+O_WRONLY -> open write only\
+O_RDWR -> open read write.\
+\
+3 additional flags to modify OPEN's behavior\
+\
+O_CREAT, creates file if it doesn't exist yet\
+O_TRUNC, look it up\
+O_APPEND, look it up\
+\
+*******\
+simple example\
+*******\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include "j12.h"\
+\
+int main()\
+\{\
+	int fd;\
+	fd = open("alph", O_RDONLY);\
+	ft_putnbr(fd);\
+	return (0);\
+\}\
+\
+**************\
+\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include "j12.h"\
+\
+int main()\
+\{\
+	int fd;\
+	fd = open("42", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	ft_putnbr(fd);\
+	return (0);\
+\}\
+\
+*********\
+close\
+*********\
+\
+int close(int fd);\
+returns 0 normally or -1 if error.\
+\
+**********\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include "j12.h"\
+\
+int main()\
+\{\
+	int fd;\
+	fd = open("42", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	ft_putnbr(fd);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+3. write\
+\
+int write(int fd, char *buf, int count);\
+\
+1. param: file descriptor\
+2. param: what we want to write\
+3. param: number of bytes we need\
+\
+returns number of bytes written, or -1 if error.\
+\
+\
+\
+***************\
+white example\
+*************\
+\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include "j12.h"\
+\
+void ft_putchar(int fd, char c)\
+\{\
+	write(fd, &c, 1);\
+\}\
+\
+\
+int main()\
+\{\
+	int fd;\
+	fd = open("42", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	ft_putnbr(fd);\
+	ft_putchar(fd, \'91Z\'92);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+\
+fd = open("42", O_WRONLY | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR);\
+\
+will let us write to the end of file\
+\
+********\
+write str\
+*********\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include "j12.h"\
+\
+void ft_putstr_fd(int fd, char *str)\
+\{\
+	write(fd, str, ft_strlen(str));\
+\}\
+\
+\
+int main()\
+\{\
+	int fd;\
+	fd = open("42", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	ft_putnbr(fd);\
+	ft_putstr_fd(fd, \'93Hello World!\\n\'94);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+4. read\
+\
+int read(int fd, char *buf, int count);\
+fd = file descriptor\
+buf = output buffer\
+count = number of bytes\
+\
+*****\
+example\
+*****\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include <unistd.h>\
+#include "j12.h"\
+\
+#define BUF_SIZE 4096\
+\
+\
+int main()\
+\{\
+	int fd;\
+	int ret;\
+	char buf(BUF_SIZE + 1];\
+\
+	fd = open("42", O_RDONLY);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}I:\
+	ret = read(fd, buf, BUF_SIZE);\
+	buf[ret] = \'91\\0\'92;\
+	ft_putnbr(ret);\
+	ft_putstr(buf);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+***********\
+of unknown size\
+***********\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include <unistd.h>\
+#include "j12.h"\
+\
+#define BUF_SIZE 10\
+\
+\
+int main()\
+\{\
+	int fd;\
+	int ret;\
+	char buf(BUF_SIZE + 1];\
+\
+	fd = open("42", O_RDONLY);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	while (ret = read(fd, buf, BUF_SIZE))\
+	\{\
+		buf[ret] = \'91\\0\'92;\
+		ft_putnbr(ret);\
+		ft_putstr(buf);\
+	\}\
+	ft_putnbr(ret);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+5. file offset - LSEEK\
+\
+int lseek(int fd, int offset, int mode);\
+fd = file descriptor\
+offset = off set of result of calculation\
+mode = mode of calculation\
+\
+*********\
+seek example\
+*********\
+\
+#include <sys/types.h>\
+#include <sys/stat.h>\
+#include <fcntl.h>\
+#include <unistd.h>\
+#include "j12.h"\
+\
+#define BUF_SIZE 4096\
+\
+\
+int main()\
+\{\
+	int fd;\
+	int ret;\
+	char buf(BUF_SIZE + 1];\
+\
+	fd = open("42", O_RDONLY);\
+	if (fd == -1)\
+	\{\
+		ft_putstr("open() failed\\n");\
+	\}\
+	while (ret = read(fd, buf, BUF_SIZE))\
+	\{\
+		buf[ret] = \'91\\0\'92;\
+		ft_putnbr(ret);\
+		ft_putstr(buf);\
+		lseek(fd, -10, SEEK_END); <-infinite loop.\
+	\}\
+	ft_putnbr(ret);\
+	if (close(fd) == -1)\
+	\{\
+		ft_putstr("close() failed\\n");\
+		return (1);\
+	\}\
+	return (0);\
+\}\
+\
+Day 13, day 12 Piscine\
+\
+Binary trees\
+\
+1. How to use binary tree\
+\
+chain list with right and left elements\
+\
+normal list\
+\
+0 1 1 2 3 4\
+\
+binary tree\
+\
+         2\
+     1      3\
+ 0      1       4\
+\
+****************\
+sample element of tree\
+****************\
+typedef struct	s_btree\
+\{\
+	struct s_btree *parent;\
+	struct s_btree *right;\
+	struct s_btree *left;\
+	void		 *data;\
+\}			  t_btree\
+\
+in depth traversal, we use DFS\
+breath-first traversal, BFS\
+ \
+if list is sorted, it may make the tree unbalanced to one side, making it check twice every time (even longer than regular sorted list)\
+\
+2. how to balance a tree\
+\
+if a tree is balanced, its search times are more optimized.\
+\
+enum	e-rb-color\
+\{\
+	RB_BLACK;\
+	RB_RED;\
+\};\
+\
+typedef struct	s_rb_node\
+\{\
+	struct s_rb_node *parent;\
+	struct s_rb_node *right;\
+	struct s_rb_node *left;\
+	void		      *data;\
+	enum e_rb_color color;\
+\}			       t_btree\
+\
+red and black tree rules\
+1. root node is black\
+2. all leaves, including those that are null, are also black.\
+3. a red node only has black paths, both null, either real nodes but black, or a mix.\
+4. from which ever node of the tree, the amount of black nodes, crossed in distance between this node and the last leaf, is the same for every leaf of this node.\
+^tree is balanced\
+\
+0. begin\
+\
+	G(B)\
+       P(R)   U(B)\
+   N(R)\
+\
+1. Intermediate (rotation happened around G)\
+\
+	P(R)\
+       N(R)   G(B)\
+                    U(B)\
+\
+2. end (updating flags to make it follow the rules).\
+\
+	P(B)\
+       N(R)  G(R)\
+		U(B)\
+\
+}
