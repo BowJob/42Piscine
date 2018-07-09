@@ -1,0 +1,171 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red200\green20\blue201;\red180\green36\blue25;}
+\margl1440\margr1440\vieww50700\viewh25480\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 42 Restart Notes (Review and catchup)
+\b0 \
+\
+
+\b Basic Project Procedure
+\b0 \
+\
+1. git clone <link> <folder name>\
+\
+2. cd to folder\
+\
+3. vim <name>.c\
+\
+***work on code***\
+\
+4. git add * (or */* for sub-folders)\
+\
+4a. git rm <some name> to remove the file from git\
+\
+5. git commit -m \'93Some comment\'94\
+\
+6. git push (when ready to commit)\
+\
+
+\b Kerberos sessions and log in
+\b0 \
+\
+1. klist to show active sessions\
+2. kdestroy to destroy sessions\
+2a. git clone should fail\
+3. kinit <user name> password\
+\
+
+\b Vim
+\b0 \
+\
+1. vim somename.c\
+\
+1a. vim has command mode and insertion mode\
+\
+2. :q to quit, :q! to quit without saving\
+\
+3. Press \'93
+\b i
+\b0 \'94 to start inserting and 
+\b esc
+\b0  to go back to command mode.\
+\
+4. :w to save, :wq to save and exit\
+\
+5. insert 42 header :Stdheader\
+\
+
+\b Tar
+\b0 \
+\
+1. Create via: tar -cf <file name>.tar <files to ne included>\
+\
+2. Unzip via: tar -xvf\
+\
+
+\b GCC and basic C files
+\b0 \
+\
+1. Usual headers: #include <unistd.h> and <stdio.h>\
+\
+2. basic main:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 int main()\
+\{\
+	**Some function**\
+	return (0);\
+\}\
+\
+3. Compile with gcc -o <name> <sourcefile.c>\
+\
+3a. To compile thoroughly: gcc -Wall -Wextra -Werror -o <name> <sourcefile.c>\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\b \cf0 Library Creation
+\b0 \
+\
+1. Shell command to create lib\
+       \
+libft_creator.sh\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \CocoaLigature0 gcc -Wall -c *.c\
+ar rc libstr.a *.o\
+rm *.o\
+\
+a. turns all c files to object, o, files\
+b. combines all .o files into libstr.a\
+c. clean up, remove all .o files\
+\
+
+\f2\b Macro
+\f1\b0 \
+\
+1. Macro is made possible with the ifdef, ifndef, and endif\
+\
+2. typedef is used as well\
+\
+
+\f2\b Makefile
+\f1\b0 \
+\
+1. Makefile sample (Makefile file, includes and srcs folders are at the main level)\
+(includes has the header file, srcs has the .c files)\
+\
+NAME = libft.a\
+CC = gcc\
+INCLUDES = ./includes/ft.h\
+SRCS = ./srcs/ft_putchar.c ./srcs/ft_putstr.c ./srcs/ft_strcmp.c ./srcs/ft_strlen.c ./srcs/ft_swap.c\
+CFLAGS = -Wall -Wextra -Werror\
+COPTION = -c -I $(INCLUDES)\
+OBJS = ./ft_putchar.o ./ft_putstr.o ./ft_strcmp.o ./ft_strlen.o ./ft_swap.o\
+\
+all: $(NAME)\
+\
+$(NAME):\
+	$(CC) $(CFLAGS) $(COPTION) $(SRCS)\
+	ar rc $(NAME) $(OBJS)\
+\
+clean:\
+	/bin/rm -f $(OBJS)\
+fclean: clean\
+	/bin/rm -f $(NAME)\
+re: fclean all\
+\
+2. header file example (located in includes)\
+\
+#ifndef FT_H\
+# define FT_H\
+# include <unistd.h>\
+\
+void	ft_putstr(char *str);\
+void	ft_swap(int *a, int *b);\
+void	ft_putchar(char c);\
+int		ft_strlen(char *str);\
+int		ft_strcmp(char *s1, char *s2);\
+\
+#endif\
+\
+3. header in C file (located in srcs)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 #include \cf3 "../includes/ft.h"\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+
+\f2\b LDAP
+\f1\b0 \
+\
+1. ldapwhoami\
+\
+2. 
+\f0\fs24 \CocoaLigature1 ldapsearch -LLL uid=\'93some user name\'94
+\f1\fs22 \CocoaLigature0 \
+}
