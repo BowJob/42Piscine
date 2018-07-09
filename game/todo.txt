@@ -1,0 +1,12 @@
+1. Get function on detecting if a key is held down.
+
+2. Find a way to represent the screen as a 2D array.
+
+3. Find a way to read a file into the 2D array for maps and objects.
+
+
+
+
+????????
+
+4. Not profit, but GAME!

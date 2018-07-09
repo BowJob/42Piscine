@@ -1,0 +1,16 @@
+
+1. Clear screens with: #include <stdlib.h>
+
+with prototype:
+int system(const char *command);
+
+then call system using:
+system("clear");
+
+Having this in main and inside a loop will clear the screen, establishing frames.
+
+2. Set frames with
+
+system("sleep .1"); <--- this will make system wait for 0.1 seconds before continuing routine.
+
+
